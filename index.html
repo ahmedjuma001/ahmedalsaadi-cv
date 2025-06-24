@@ -5,27 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ahmed Alsaadi - CV</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f9fc;
+      background: linear-gradient(to right, #eef2f3, #8e9eab);
       color: #333;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
     header {
-      background-color: #2d3e50;
+      background: #2d3e50;
       color: white;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 2.2rem;
+    }
+    header p {
+      font-size: 1rem;
+      margin-top: 0.5rem;
     }
     .container {
-      padding: 2rem;
-      max-width: 900px;
+      padding: 1rem;
+      max-width: 1000px;
       margin: auto;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      margin-top: -1rem;
+      animation: slideUp 0.5s ease-in-out;
+    }
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
     section {
       margin-bottom: 2rem;
@@ -42,22 +63,20 @@
     li {
       margin-bottom: 0.5rem;
     }
-    .info p, .info li {
-      line-height: 1.6;
-    }
-    .download-button {
-      display: inline-block;
-      background-color: #2d3e50;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 1rem;
-    }
-    .certificate-section a {
-      display: block;
+    a {
       color: #2d3e50;
-      margin-bottom: 0.5rem;
+      text-decoration: none;
+    }
+    .linkedin {
+      display: inline-block;
+      background: #0077b5;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      margin-top: 0.5rem;
+    }
+    .linkedin:hover {
+      background: #005983;
     }
     footer {
       text-align: center;
@@ -65,12 +84,22 @@
       background: #2d3e50;
       color: white;
     }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      .container {
+        padding: 1rem;
+        margin: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Ahmed Alsaadi</h1>
     <p>Network Engineer | Data Analyst | Customer Service Professional</p>
+    <a class="linkedin" href="https://www.linkedin.com/in/ahmed-alsaadi-937151277" target="_blank">Visit my LinkedIn</a>
   </header>
 
   <div class="container">
@@ -100,14 +129,6 @@
         <li>Data Analytics (Power BI, Excel, SQL) – General Assembly</li>
         <li>Learning Ansible – LinkedIn Learning</li>
       </ul>
-    </section>
-
-    <section class="certificate-section">
-      <h2>Documents & Certificates</h2>
-      <a href="Graduate_En.pdf" download>Graduation Proof – University of Bahrain</a>
-      <a href="fortinet cer.jpeg" download>Fortinet Cybersecurity Certificate</a>
-      <a href="/mnt/data/Ansible%20LinkedIn%20Learning%20Certificate.pdf" download>Ansible Certificate – LinkedIn Learning</a>
-      <a href="AHMED ALSAADI CV-2024.pdf" class="download-button" download>Download Full CV (PDF)</a>
     </section>
 
     <section>
