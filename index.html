@@ -23,8 +23,13 @@
         background: white !important;
         color: #000 !important;
       }
-      .download, .linkedin, form {
+      .download, form {
         display: none !important;
+      }
+      .linkedin-print {
+        display: block !important;
+        margin-top: 10px;
+        font-size: 0.95rem;
       }
     }
     @keyframes fadeIn {
@@ -127,40 +132,15 @@
     .download:hover {
       background: #059669;
     }
-    .contact-form {
-      margin-top: 2rem;
-      background: #f9fafb;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 0.75rem;
-      margin: 0.5rem 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-    .contact-form button {
-      background-color: #2563eb;
-      color: white;
-      padding: 0.5rem 1.2rem;
-      border: none;
-      border-radius: 5px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    .contact-form button:hover {
-      background-color: #1d4ed8;
-    }
     footer {
       text-align: center;
       padding: 1.5rem 1rem;
       background: #1e293b;
       color: white;
       font-size: 0.9rem;
+    }
+    .linkedin-print {
+      display: none;
     }
     @media (max-width: 600px) {
       header h1 {
@@ -195,68 +175,80 @@
       </p>
       <p><strong>Location:</strong> Hamad Town, Bahrain</p>
       <p><strong>Nationality:</strong> Bahraini</p>
+      <p class="linkedin-print"><strong>LinkedIn:</strong> https://www.linkedin.com/in/ahmed-alsaadi-937151277</p>
     </section>
 
     <section>
-  <h2>Profile Summary</h2>
-  <p>A motivated Network Engineering graduate with hands-on experience in networking, cybersecurity, and data analysis. Skilled in Power BI, Excel, SQL, and network troubleshooting. Fluent in Arabic and English, with strong communication and problem-solving skills.</p>
-</section>
+      <h2>Profile Summary</h2>
+      <p>A motivated Network Engineering graduate with hands-on experience in networking, cybersecurity, and data analysis. Skilled in Power BI, Excel, SQL, and network troubleshooting. Fluent in Arabic and English, with strong communication and problem-solving skills. Currently training at the Information & eGovernment Authority as a Network Administration Trainee.</p>
+    </section>
 
-<section>
-  <h2>Education</h2>
-  <p><strong>University of Bahrain</strong> – B.Sc. in Network Engineering (2024)</p>
-</section>
+    <section>
+      <h2>Education</h2>
+      <p><strong>University of Bahrain</strong> – B.Sc. in Network Engineering (2024)</p>
+    </section>
 
-<section>
-  <h2>Certifications</h2>
-  <ul>
-    <li>Fortinet Certified Associate in Cybersecurity</li>
-    <li>Basics of Computer Networking – Great Learning</li>
-    <li>Data Analytics (Power BI, Excel, SQL) – General Assembly</li>
-    <li>Learning Ansible – LinkedIn Learning</li>
-    <li>LPIC-1: Linux Administrator</li>
-   </ul>
-</section>
-<section>
-  <h2>Experience</h2>
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>Fortinet Certified Associate in Cybersecurity</li>
+        <li>Basics of Computer Networking – Great Learning</li>
+        <li>Data Analytics (Power BI, Excel, SQL) – General Assembly</li>
+        <li>Learning Ansible – LinkedIn Learning</li>
+        <li>LPIC-1: Linux Administrator</li>
+      </ul>
+    </section>
 
-  <p><strong>Information & eGovernment Authority – Network Administration Trainee</strong> (Jul 2025 – Present)</p>
-  <ul>
-    <li>Assisting in configuring and maintaining government network infrastructure</li>
-    <li>Supporting network monitoring, troubleshooting, and security tasks</li>
-    <li>Collaborating with senior engineers on daily IT operations</li>
-  </ul>
+    <section>
+      <h2>Experience</h2>
 
-  <p><strong>BAPCO Gas – Network Infrastructure Trainee</strong> (Jul – Aug 2024)</p>
-  <ul>
-    <li>Configured and troubleshot network devices</li>
-    <li>Supported IT operations and monitored infrastructure</li>
-  </ul>
+      <p><strong>Information & eGovernment Authority – Network Administration Trainee</strong> (Jul 2025 – Present)</p>
+      <ul>
+        <li>Assisting in configuring and maintaining government network infrastructure</li>
+        <li>Supporting network monitoring, troubleshooting, and security tasks</li>
+        <li>Collaborating with senior engineers on daily IT operations</li>
+      </ul>
 
-  <p><strong>The Benefit Company – Network Support Trainee</strong> (Sep – Oct 2024)</p>
-  <ul>
-    <li>Worked with Fortinet, SolarWinds, and Cloudflare</li>
-    <li>Managed Cisco routers/switches and maintained network health</li>
-  </ul>
-</section>
+      <p><strong>BAPCO Gas – Network Infrastructure Trainee</strong> (Jul – Aug 2024)</p>
+      <ul>
+        <li>Configured and troubleshot network devices</li>
+        <li>Supported IT operations and monitored infrastructure</li>
+      </ul>
 
+      <p><strong>The Benefit Company – Network Support Trainee</strong> (Sep – Oct 2024)</p>
+      <ul>
+        <li>Worked with Fortinet, SolarWinds, and Cloudflare</li>
+        <li>Managed Cisco routers/switches and maintained network health</li>
+      </ul>
+    </section>
 
-<section>
-  <h2>Skills</h2>
-  <ul>
-    <li>Networking, Troubleshooting, Cisco Devices</li>
-    <li>Power BI, Excel, SQL</li>
-    <li>Cybersecurity Basics</li>
-    <li>Customer Service & Communication</li>
-    <li>Microsoft Office</li>
-    <li>Fluent in Arabic and English</li>
-  </ul>
-</section>
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Networking, Troubleshooting, Cisco Devices</li>
+        <li>Linux</li>
+        <li>SD-WAN</li>
+        <li>Infoblox</li>
+        <li>SolarWinds</li>
+        <li>Fortinet</li>
+        <li>Power BI, Excel, SQL</li>
+        <li>Cybersecurity Basics</li>
+        <li>Customer Service & Communication</li>
+        <li>Microsoft Office</li>
+        <li>Fluent in Arabic and English</li>
+      </ul>
+    </section>
 
-<section>
-  <h2>Additional Information</h2>
-  <p>Open to full-time or part-time opportunities in IT, data analysis, and support roles. References available upon request.</p>
-</section>
+    <section>
+      <h2>Additional Information</h2>
+      <p>Open to full-time or part-time opportunities in IT, data analysis, and support roles. References available upon request.</p>
+    </section>
 
-<button class="download" onclick="window.print()">Download CV as PDF</button>
+    <button class="download" onclick="window.print()">Download CV as PDF</button>
+  </div>
 
+  <footer>
+    &copy; 2025 Ahmed Alsaadi. All Rights Reserved.
+  </footer>
+</body>
+</html>
