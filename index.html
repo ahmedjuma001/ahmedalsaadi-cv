@@ -12,6 +12,38 @@
       margin: 0;
       padding: 0;
     }
+    header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #1e293b;
+  color: white;
+  padding: 2rem 1rem;
+  gap: 1.5rem;
+}
+
+.header-left {
+  flex-shrink: 0;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0a66c2;
+}
+
+.header-right h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.header-right p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
     body {
       font-family: 'Inter', sans-serif;
       background: linear-gradient(to right, #fdfbfb, #ebedee);
@@ -154,11 +186,17 @@
   </style>
 </head>
 <body>
-  <header>
+<header>
+  <div class="header-left">
+    <img src="your-photo.jpg" alt="Ahmed Alsaadi" class="profile-pic">
+  </div>
+  <div class="header-right">
     <h1>Ahmed Alsaadi</h1>
     <p>Network Engineer</p>
     <a class="linkedin" href="https://www.linkedin.com/in/ahmed-alsaadi-937151277" target="_blank">LinkedIn Profile</a>
-  </header>
+  </div>
+</header>
+
 
   <div class="container" id="cv-content">
     <section>
@@ -252,3 +290,4 @@
   </footer>
 </body>
 </html>
+
