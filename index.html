@@ -8,18 +8,14 @@
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
+    * { box-sizing: border-box; }
     body {
       font-family: 'Inter', sans-serif;
       background: linear-gradient(to right, #fdfbfb, #ebedee);
       color: #222;
       animation: fadeIn 1s ease-in;
     }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
     header {
       display: flex;
@@ -31,27 +27,15 @@
       gap: 1.5rem;
     }
 
-    .header-left {
-      flex-shrink: 0;
-    }
-
     .profile-pic {
-      width: 120px;
-      height: 120px;
+      width: 120px; height: 120px;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #0a66c2;
     }
 
-    .header-right h1 {
-      font-size: 2rem;
-      margin-bottom: 0.3rem;
-    }
-
-    .header-right p {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-    }
+    .header-right h1 { font-size: 2rem; margin-bottom: 0.3rem; }
+    .header-right p { font-size: 1.1rem; }
 
     .linkedin {
       display: inline-block;
@@ -63,19 +47,15 @@
       text-decoration: none;
       font-weight: 600;
     }
-
-    .linkedin:hover {
-      background: #004182;
-    }
+    .linkedin:hover { background: #004182; }
 
     .container {
       padding: 2rem;
       max-width: 900px;
       margin: -2rem auto 2rem;
-      background: #ffffff;
+      background: white;
       border-radius: 12px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      animation: slideUp 0.6s ease-out;
     }
 
     h2 {
@@ -86,39 +66,9 @@
       margin-bottom: 1rem;
     }
 
-    section {
-      margin-bottom: 2rem;
-    }
-
-    section:hover {
-      background-color: #f3f4f6;
-      border-radius: 8px;
-      padding: 0.5rem;
-    }
-
-    ul {
-      padding-left: 1.5rem;
-    }
-
-    li {
-      margin-bottom: 0.5rem;
-      line-height: 1.6;
-    }
-
-    strong {
-      color: #0a66c2;
-    }
-
-    .contact-icons a {
-      margin-left: 10px;
-      color: #1e293b;
-      font-size: 1.2rem;
-      text-decoration: none;
-    }
-
-    .contact-icons a:hover {
-      color: #0a66c2;
-    }
+    section { margin-bottom: 2rem; }
+    ul { padding-left: 1.5rem; }
+    li { margin-bottom: 0.5rem; line-height: 1.6; }
 
     .download {
       margin: 2rem auto;
@@ -128,13 +78,10 @@
       border: none;
       padding: 0.6rem 1.2rem;
       border-radius: 6px;
-      cursor: pointer;
       font-weight: 600;
+      cursor: pointer;
     }
-
-    .download:hover {
-      background: #059669;
-    }
+    .download:hover { background: #059669; }
 
     footer {
       text-align: center;
@@ -145,16 +92,7 @@
     }
 
     @media print {
-      .download {
-        display: none;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 1.2rem;
-        margin: 1rem;
-      }
+      .download { display: none; }
     }
   </style>
 </head>
@@ -162,7 +100,7 @@
 <body>
 
 <header>
-  <div class="header-left">
+  <div>
     <img src="your-photo.jpg" alt="Ahmed Alsaadi" class="profile-pic">
   </div>
   <div class="header-right">
@@ -178,16 +116,8 @@
 
   <section>
     <h2>Contact Information</h2>
-    <p><strong>Email:</strong> ahmed001jk@gmail.com
-      <span class="contact-icons">
-        <a href="mailto:ahmed001jk@gmail.com"><i class="fas fa-envelope"></i></a>
-      </span>
-    </p>
-    <p><strong>Phone:</strong> +973 39613377
-      <span class="contact-icons">
-        <a href="https://wa.me/97339613377"><i class="fab fa-whatsapp"></i></a>
-      </span>
-    </p>
+    <p><strong>Email:</strong> ahmed001jk@gmail.com</p>
+    <p><strong>Phone:</strong> +973 39613377</p>
     <p><strong>Location:</strong> Hamad Town, Bahrain</p>
     <p><strong>Nationality:</strong> Bahraini</p>
   </section>
@@ -197,7 +127,7 @@
     <p>
       A motivated Network Engineering graduate with hands-on experience in networking,
       cybersecurity, and data analysis. Skilled in Power BI, Excel, SQL, and network
-      troubleshooting. Fluent in Arabic and English, with strong communication and
+      troubleshooting. Fluent in Arabic and English with strong communication and
       problem-solving skills.
     </p>
   </section>
@@ -210,28 +140,39 @@
   <section>
     <h2>Certifications</h2>
     <ul>
-      <li><strong>AWS Certified Solutions Architect – Associate</strong></li>
-      <li>Fortinet Certified Associate in Cybersecurity</li>
-      <li>LPIC-1: Linux Administrator</li>
+      <li>
+        <strong>AWS Certified Solutions Architect – Associate</strong>
+        &nbsp;<a href="https://www.credly.com/badges/1cf83cba-e9f8-423f-9f02-34712382d0b8/linked_in_profile" target="_blank">(View Badge)</a>
+      </li>
+      <li>
+        <strong>LPIC-1: Linux Administrator</strong>
+        &nbsp;<a href="https://cs.lpi.org/caf/Xamman/certification/verify/LPI000658026/94lhuxncvd" target="_blank">(Verify)</a>
+      </li>
+      <li>
+        <strong>Learning Ansible – LinkedIn Learning</strong>
+        &nbsp;<a href="https://www.linkedin.com/learning/certificates/8d42cfe3ff60e0586bf28e885cd7695a49061ceb2d570efb7e81d5006a6a75ab" target="_blank">(Certificate)</a>
+      </li>
+      <li>
+        <strong>Fortinet Certified Associate in Cybersecurity</strong>
+        &nbsp;<a href="https://www.linkedin.com/feed/update/urn:li:activity:7252191375897636864/" target="_blank">(Badge)</a>
+      </li>
       <li>Data Analytics (Power BI, Excel, SQL) – General Assembly</li>
-      <li>Learning Ansible – LinkedIn Learning</li>
       <li>Basics of Computer Networking – Great Learning</li>
     </ul>
   </section>
 
   <section>
     <h2>Experience</h2>
-
     <p><strong>Information & eGovernment Authority – Network Administration Trainee</strong></p>
     <ul>
-      <li>Assisting in configuring and maintaining government network infrastructure</li>
+      <li>Configuring and maintaining government network infrastructure</li>
       <li>Supporting network monitoring, troubleshooting, and security tasks</li>
     </ul>
 
     <p><strong>BAPCO Gas – Network Infrastructure Trainee</strong></p>
     <ul>
       <li>Configured and troubleshot network devices</li>
-      <li>Supported IT operations and infrastructure monitoring</li>
+      <li>Assisted with infrastructure monitoring and support</li>
     </ul>
 
     <p><strong>The Benefit Company – Network Support Trainee</strong></p>
