@@ -6,43 +6,13 @@
   <title>Ahmed Alsaadi - CV</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-    header {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* centers the whole content */
-  background: #1e293b;
-  color: white;
-  padding: 2rem 1rem;
-  gap: 1.5rem;
-}
-
-.header-left {
-  flex-shrink: 0;
-}
-
-.profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #0a66c2;
-}
-
-.header-right h1 {
-  font-size: 2rem;
-  margin-bottom: 0.3rem;
-}
-
-.header-right p {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
 
     body {
       font-family: 'Inter', sans-serif;
@@ -50,53 +20,54 @@
       color: #222;
       animation: fadeIn 1s ease-in;
     }
-    @media print {
-      body {
-        background: white !important;
-        color: #000 !important;
-      }
-      .download, form {
-        display: none !important;
-      }
-      .linkedin-print {
-        display: block !important;
-        margin-top: 10px;
-        font-size: 0.95rem;
-      }
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
+
     header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background: #1e293b;
       color: white;
-      padding: 3rem 1rem;
-      text-align: center;
+      padding: 2rem 1rem;
+      gap: 1.5rem;
     }
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
+
+    .header-left {
+      flex-shrink: 0;
     }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-      opacity: 0.85;
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #0a66c2;
     }
+
+    .header-right h1 {
+      font-size: 2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .header-right p {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
     .linkedin {
       display: inline-block;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
       background: #0a66c2;
       color: white;
       padding: 0.6rem 1.2rem;
       border-radius: 8px;
       text-decoration: none;
-      transition: background 0.3s;
       font-weight: 600;
     }
+
     .linkedin:hover {
       background: #004182;
     }
+
     .container {
       padding: 2rem;
       max-width: 900px;
@@ -106,10 +77,7 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.08);
       animation: slideUp 0.6s ease-out;
     }
-    @keyframes slideUp {
-      from { transform: translateY(30px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
+
     h2 {
       font-size: 1.4rem;
       color: #1e293b;
@@ -117,38 +85,41 @@
       padding-left: 0.75rem;
       margin-bottom: 1rem;
     }
+
     section {
       margin-bottom: 2rem;
     }
+
     section:hover {
       background-color: #f3f4f6;
       border-radius: 8px;
       padding: 0.5rem;
-      transition: background 0.3s;
     }
+
     ul {
-      list-style-type: disc;
       padding-left: 1.5rem;
     }
+
     li {
       margin-bottom: 0.5rem;
-    }
-    p, li {
-      font-size: 1rem;
       line-height: 1.6;
     }
+
     strong {
       color: #0a66c2;
     }
+
     .contact-icons a {
       margin-left: 10px;
       color: #1e293b;
-      text-decoration: none;
       font-size: 1.2rem;
+      text-decoration: none;
     }
+
     .contact-icons a:hover {
       color: #0a66c2;
     }
+
     .download {
       margin: 2rem auto;
       display: block;
@@ -159,25 +130,27 @@
       border-radius: 6px;
       cursor: pointer;
       font-weight: 600;
-      transition: background 0.3s;
     }
+
     .download:hover {
       background: #059669;
     }
+
     footer {
       text-align: center;
-      padding: 1.5rem 1rem;
+      padding: 1.5rem;
       background: #1e293b;
       color: white;
       font-size: 0.9rem;
     }
-    .linkedin-print {
-      display: none;
-    }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
+
+    @media print {
+      .download {
+        display: none;
       }
+    }
+
+    @media (max-width: 600px) {
       .container {
         padding: 1.2rem;
         margin: 1rem;
@@ -185,7 +158,9 @@
     }
   </style>
 </head>
+
 <body>
+
 <header>
   <div class="header-left">
     <img src="your-photo.jpg" alt="Ahmed Alsaadi" class="profile-pic">
@@ -193,102 +168,102 @@
   <div class="header-right">
     <h1>Ahmed Alsaadi</h1>
     <p>Network Engineer</p>
-    <a class="linkedin" href="https://www.linkedin.com/in/ahmed-alsaadi-937151277" target="_blank">LinkedIn Profile</a>
+    <a class="linkedin" href="https://www.linkedin.com/in/ahmed-alsaadi-937151277" target="_blank">
+      LinkedIn Profile
+    </a>
   </div>
 </header>
 
+<div class="container">
 
-  <div class="container" id="cv-content">
-    <section>
-      <h2>Contact Information</h2>
-      <p><strong>Email:</strong> ahmed001jk@gmail.com
-        <span class="contact-icons">
-          <a href="mailto:ahmed001jk@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
-        </span>
-      </p>
-      <p><strong>Phone:</strong> +973 39613377
-        <span class="contact-icons">
-          <a href="https://wa.me/97339613377" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        </span>
-      </p>
-      <p><strong>Location:</strong> Hamad Town, Bahrain</p>
-      <p><strong>Nationality:</strong> Bahraini</p>
-      <p class="linkedin-print"><strong>LinkedIn:</strong> https://www.linkedin.com/in/ahmed-alsaadi-937151277</p>
-    </section>
+  <section>
+    <h2>Contact Information</h2>
+    <p><strong>Email:</strong> ahmed001jk@gmail.com
+      <span class="contact-icons">
+        <a href="mailto:ahmed001jk@gmail.com"><i class="fas fa-envelope"></i></a>
+      </span>
+    </p>
+    <p><strong>Phone:</strong> +973 39613377
+      <span class="contact-icons">
+        <a href="https://wa.me/97339613377"><i class="fab fa-whatsapp"></i></a>
+      </span>
+    </p>
+    <p><strong>Location:</strong> Hamad Town, Bahrain</p>
+    <p><strong>Nationality:</strong> Bahraini</p>
+  </section>
 
-    <section>
-      <h2>Profile Summary</h2>
-      <p>A motivated Network Engineering graduate with hands-on experience in networking, cybersecurity, and data analysis. Skilled in Power BI, Excel, SQL, and network troubleshooting. Fluent in Arabic and English, with strong communication and problem-solving skills. Currently training at the Information & eGovernment Authority as a Network Administration Trainee.</p>
-    </section>
+  <section>
+    <h2>Profile Summary</h2>
+    <p>
+      A motivated Network Engineering graduate with hands-on experience in networking,
+      cybersecurity, and data analysis. Skilled in Power BI, Excel, SQL, and network
+      troubleshooting. Fluent in Arabic and English, with strong communication and
+      problem-solving skills.
+    </p>
+  </section>
 
-    <section>
-      <h2>Education</h2>
-      <p><strong>University of Bahrain</strong> – B.Sc. in Network Engineering (2024)</p>
-    </section>
+  <section>
+    <h2>Education</h2>
+    <p><strong>University of Bahrain</strong> – B.Sc. in Network Engineering (2024)</p>
+  </section>
 
-    <section>
-      <h2>Certifications</h2>
-      <ul>
-        <li>Fortinet Certified Associate in Cybersecurity</li>
-        <li>Basics of Computer Networking – Great Learning</li>
-        <li>Data Analytics (Power BI, Excel, SQL) – General Assembly</li>
-        <li>Learning Ansible – LinkedIn Learning</li>
-        <li>LPIC-1: Linux Administrator</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Certifications</h2>
+    <ul>
+      <li><strong>AWS Certified Solutions Architect – Associate</strong></li>
+      <li>Fortinet Certified Associate in Cybersecurity</li>
+      <li>LPIC-1: Linux Administrator</li>
+      <li>Data Analytics (Power BI, Excel, SQL) – General Assembly</li>
+      <li>Learning Ansible – LinkedIn Learning</li>
+      <li>Basics of Computer Networking – Great Learning</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Experience</h2>
+  <section>
+    <h2>Experience</h2>
 
-      <p><strong>Information & eGovernment Authority – Network Administration Trainee</strong> (Jul 2025 – Present)</p>
-      <ul>
-        <li>Assisting in configuring and maintaining government network infrastructure</li>
-        <li>Supporting network monitoring, troubleshooting, and security tasks</li>
-        <li>Collaborating with senior engineers on daily IT operations</li>
-      </ul>
+    <p><strong>Information & eGovernment Authority – Network Administration Trainee</strong></p>
+    <ul>
+      <li>Assisting in configuring and maintaining government network infrastructure</li>
+      <li>Supporting network monitoring, troubleshooting, and security tasks</li>
+    </ul>
 
-      <p><strong>BAPCO Gas – Network Infrastructure Trainee</strong> (Jul – Aug 2024)</p>
-      <ul>
-        <li>Configured and troubleshot network devices</li>
-        <li>Supported IT operations and monitored infrastructure</li>
-      </ul>
+    <p><strong>BAPCO Gas – Network Infrastructure Trainee</strong></p>
+    <ul>
+      <li>Configured and troubleshot network devices</li>
+      <li>Supported IT operations and infrastructure monitoring</li>
+    </ul>
 
-      <p><strong>The Benefit Company – Network Support Trainee</strong> (Sep – Oct 2024)</p>
-      <ul>
-        <li>Worked with Fortinet, SolarWinds, and Cloudflare</li>
-        <li>Managed Cisco routers/switches and maintained network health</li>
-      </ul>
-    </section>
+    <p><strong>The Benefit Company – Network Support Trainee</strong></p>
+    <ul>
+      <li>Worked with Fortinet, SolarWinds, and Cloudflare</li>
+      <li>Managed Cisco routers and switches</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Networking, Troubleshooting, Cisco Devices</li>
-        <li>Linux</li>
-        <li>SD-WAN</li>
-        <li>Infoblox</li>
-        <li>SolarWinds</li>
-        <li>Fortinet</li>
-        <li>Power BI, Excel, SQL</li>
-        <li>Cybersecurity Basics</li>
-        <li>Customer Service & Communication</li>
-        <li>Microsoft Office</li>
-        <li>Fluent in Arabic and English</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>Networking & Troubleshooting</li>
+      <li>Cisco Devices</li>
+      <li>Linux</li>
+      <li>SD-WAN</li>
+      <li>Infoblox</li>
+      <li>SolarWinds</li>
+      <li>Fortinet</li>
+      <li>Power BI, Excel, SQL</li>
+      <li>Cybersecurity Fundamentals</li>
+      <li>Arabic & English (Fluent)</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Additional Information</h2>
-      <p>Open to full-time or part-time opportunities in IT, data analysis, and support roles. References available upon request.</p>
-    </section>
+  <button class="download" onclick="window.print()">Download CV as PDF</button>
 
-    <button class="download" onclick="window.print()">Download CV as PDF</button>
-  </div>
+</div>
 
-  <footer>
-    &copy; 2025 Ahmed Alsaadi. All Rights Reserved.
-  </footer>
+<footer>
+  © 2025 Ahmed Alsaadi. All Rights Reserved.
+</footer>
+
 </body>
 </html>
-
-
