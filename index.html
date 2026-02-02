@@ -3,82 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ahmed Alsaadi - CV</title>
+  <title>Ahmed Alsaadi - Network Engineer CV</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
   <style>
     * { box-sizing: border-box; }
     body {
+      margin: 0;
       font-family: 'Inter', sans-serif;
       background: linear-gradient(to right, #fdfbfb, #ebedee);
-      color: #222;
-      animation: fadeIn 1s ease-in;
+      color: #111827;
+      animation: fadeIn 0.8s ease-in;
     }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px);} to { opacity: 1; transform: translateY(0);} }
 
     header {
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #1e293b;
+      background: #0b1220;
       color: white;
-      padding: 2rem 1rem;
-      gap: 1.5rem;
+      padding: 2.2rem 1rem;
+      gap: 1.6rem;
     }
 
     .profile-pic {
-      width: 120px; height: 120px;
+      width: 118px; height: 118px;
       border-radius: 50%;
       object-fit: cover;
       border: 3px solid #0a66c2;
+      background: #111827;
     }
 
-    .header-right h1 { font-size: 2rem; margin-bottom: 0.3rem; }
-    .header-right p { font-size: 1.1rem; }
+    .header-right h1 { font-size: 2.05rem; margin: 0 0 0.3rem; }
+    .header-right p { font-size: 1.05rem; margin: 0; opacity: 0.92; }
 
-    .linkedin {
+    .header-actions {
+      margin-top: 0.9rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .btn {
       display: inline-block;
-      margin-top: 0.5rem;
-      background: #0a66c2;
-      color: white;
-      padding: 0.6rem 1.2rem;
-      border-radius: 8px;
+      padding: 0.55rem 1rem;
+      border-radius: 10px;
       text-decoration: none;
       font-weight: 600;
+      font-size: 0.95rem;
+      transition: 0.2s ease;
+      border: 1px solid transparent;
     }
-    .linkedin:hover { background: #004182; }
+    .btn-primary { background: #0a66c2; color: white; }
+    .btn-primary:hover { background: #004182; }
+    .btn-secondary {
+      background: rgba(255,255,255,0.08);
+      color: white;
+      border-color: rgba(255,255,255,0.18);
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.14); }
 
     .container {
       padding: 2rem;
-      max-width: 900px;
+      max-width: 980px;
       margin: -2rem auto 2rem;
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      border-radius: 14px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
     }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.4rem;
+    }
+    @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
 
     h2 {
-      font-size: 1.4rem;
-      color: #1e293b;
+      font-size: 1.25rem;
+      color: #0b1220;
       border-left: 5px solid #0a66c2;
       padding-left: 0.75rem;
-      margin-bottom: 1rem;
+      margin: 0 0 0.9rem;
     }
 
-    section { margin-bottom: 2rem; }
-    ul { padding-left: 1.5rem; }
-    li { margin-bottom: 0.5rem; line-height: 1.6; }
+    section { margin-bottom: 1.6rem; }
+    p { margin: 0.35rem 0; line-height: 1.65; color: #111827; }
+    ul { padding-left: 1.2rem; margin: 0.4rem 0 0; }
+    li { margin-bottom: 0.5rem; line-height: 1.6; color: #111827; }
+
+    .muted { color: #4b5563; }
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.7rem;
+    }
+    .pill {
+      background: #f3f4f6;
+      color: #111827;
+      border: 1px solid #e5e7eb;
+      padding: 0.35rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .role {
+      padding: 1rem;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      margin-bottom: 0.9rem;
+      background: #ffffff;
+    }
+    .role h3 {
+      margin: 0 0 0.35rem;
+      font-size: 1.05rem;
+      color: #0b1220;
+    }
+    .role .meta { font-size: 0.93rem; color: #4b5563; margin-bottom: 0.6rem; }
 
     .download {
-      margin: 2rem auto;
-      display: block;
+      margin: 1.2rem auto 0;
+      display: inline-block;
       background: #10b981;
       color: white;
       border: none;
-      padding: 0.6rem 1.2rem;
-      border-radius: 6px;
-      font-weight: 600;
+      padding: 0.65rem 1.15rem;
+      border-radius: 10px;
+      font-weight: 700;
       cursor: pointer;
     }
     .download:hover { background: #059669; }
@@ -86,13 +140,17 @@
     footer {
       text-align: center;
       padding: 1.5rem;
-      background: #1e293b;
-      color: white;
+      background: #0b1220;
+      color: rgba(255,255,255,0.9);
       font-size: 0.9rem;
     }
 
     @media print {
+      body { background: white; }
+      header { border-radius: 0; }
+      .container { box-shadow: none; margin: 0; border-radius: 0; }
       .download { display: none; }
+      a { color: #111827; text-decoration: none; }
     }
   </style>
 </head>
@@ -103,38 +161,51 @@
   <div>
     <img src="your-photo.jpg" alt="Ahmed Alsaadi" class="profile-pic">
   </div>
+
   <div class="header-right">
     <h1>Ahmed Alsaadi</h1>
-    <p>Network Engineer</p>
-    <a class="linkedin" href="https://www.linkedin.com/in/ahmed-alsaadi-937151277" target="_blank">
-      LinkedIn Profile
-    </a>
+    <p>Network Engineer • Network Administration • Infrastructure & Security</p>
+
+    <div class="header-actions">
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/ahmed-alsaadi-937151277" target="_blank">LinkedIn</a>
+      <a class="btn btn-secondary" href="mailto:ahmed001jk@gmail.com">ahmed001jk@gmail.com</a>
+      <a class="btn btn-secondary" href="tel:+97339613377">+973 39613377</a>
+    </div>
   </div>
 </header>
 
 <div class="container">
 
-  <section>
-    <h2>Contact Information</h2>
-    <p><strong>Email:</strong> ahmed001jk@gmail.com</p>
-    <p><strong>Phone:</strong> +973 39613377</p>
-    <p><strong>Location:</strong> Hamad Town, Bahrain</p>
-    <p><strong>Nationality:</strong> Bahraini</p>
-  </section>
+  <div class="grid">
+    <section>
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> ahmed001jk@gmail.com</p>
+      <p><strong>Phone:</strong> +973 39613377</p>
+      <p><strong>Location:</strong> Hamad Town, Bahrain</p>
+      <p><strong>Nationality:</strong> Bahraini</p>
+    </section>
 
-  <section>
-    <h2>Profile Summary</h2>
-    <p>
-      A motivated Network Engineering graduate with hands-on experience in networking,
-      cybersecurity, and data analysis. Skilled in Power BI, Excel, SQL, and network
-      troubleshooting. Fluent in Arabic and English with strong communication and
-      problem-solving skills.
-    </p>
-  </section>
+    <section>
+      <h2>Core Focus</h2>
+      <p>
+        Network Engineering graduate (University of Bahrain, 2024) with hands-on training in network
+        administration, infrastructure monitoring, and security operations across government and enterprise environments.
+        Experienced with Cisco routing/switching, Fortinet platforms, SolarWinds monitoring, and Cloudflare services.
+      </p>
+      <div class="pill-row">
+        <span class="pill">Networking & Troubleshooting</span>
+        <span class="pill">Cisco</span>
+        <span class="pill">Fortinet</span>
+        <span class="pill">SolarWinds</span>
+        <span class="pill">Cloudflare</span>
+        <span class="pill">Linux</span>
+      </div>
+    </section>
+  </div>
 
   <section>
     <h2>Education</h2>
-    <p><strong>University of Bahrain</strong> – B.Sc. in Network Engineering (2024)</p>
+    <p><strong>University of Bahrain</strong> — B.Sc. Network Engineering <span class="muted">(2024)</span></p>
   </section>
 
   <section>
@@ -146,56 +217,104 @@
       </li>
       <li>
         <strong>LPIC-1: Linux Administrator</strong>
-        &nbsp;<a href="https://cs.lpi.org/caf/Xamman/certification/verify/LPI000658026/94lhuxncvd" target="_blank">(View Badge)</a>
-      </li>
-      <li>
-        <strong>Learning Ansible – LinkedIn Learning</strong>
-        &nbsp;<a href="https://www.linkedin.com/learning/certificates/8d42cfe3ff60e0586bf28e885cd7695a49061ceb2d570efb7e81d5006a6a75ab" target="_blank">(View Badge)</a>
+        &nbsp;<a href="https://cs.lpi.org/caf/Xamman/certification/verify/LPI000658026/94lhuxncvd" target="_blank">(Verify)</a>
       </li>
       <li>
         <strong>Fortinet Certified Associate in Cybersecurity</strong>
-        &nbsp;<a href="https://www.linkedin.com/feed/update/urn:li:activity:7252191375897636864/" target="_blank">(View Badge)</a>
+        &nbsp;<a href="https://www.linkedin.com/feed/update/urn:li:activity:7252191375897636864/" target="_blank">(View)</a>
       </li>
-      <li>Data Analytics (Power BI, Excel, SQL) – General Assembly</li>
-      <li>Basics of Computer Networking – Great Learning</li>
+      <li>
+        <strong>Learning Ansible</strong> — LinkedIn Learning
+        &nbsp;<a href="https://www.linkedin.com/learning/certificates/8d42cfe3ff60e0586bf28e885cd7695a49061ceb2d570efb7e81d5006a6a75ab" target="_blank">(Certificate)</a>
+      </li>
+      <li><strong>Data Analytics</strong> (Power BI, Excel, SQL) — General Assembly</li>
+      <li><strong>Basics of Computer Networking</strong> — Great Learning</li>
     </ul>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="grid">
+      <div>
+        <p><strong>Networking</strong></p>
+        <ul>
+          <li>Network troubleshooting (connectivity, latency, routing/switching issues)</li>
+          <li>Cisco routers & switches (configuration, support, maintenance)</li>
+          <li>SD-WAN (fundamentals)</li>
+        </ul>
+      </div>
+      <div>
+        <p><strong>Monitoring & Security Tools</strong></p>
+        <ul>
+          <li>SolarWinds monitoring & alert triage</li>
+          <li>Fortinet (support and operations exposure)</li>
+          <li>Cloudflare services exposure</li>
+          <li>Infoblox (DNS/IPAM exposure)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid" style="margin-top: 0.9rem;">
+      <div>
+        <p><strong>Systems</strong></p>
+        <ul>
+          <li>Linux administration fundamentals (LPIC-1)</li>
+          <li>Automation exposure: Ansible (learning/cert)</li>
+        </ul>
+      </div>
+      <div>
+        <p><strong>Data / Reporting</strong></p>
+        <ul>
+          <li>Power BI, Excel, SQL (reporting & analysis)</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section>
     <h2>Experience</h2>
-    <p><strong>Information & eGovernment Authority – Network Administration Trainee</strong></p>
-    <ul>
-      <li>Configuring and maintaining government network infrastructure</li>
-      <li>Supporting network monitoring, troubleshooting, and security tasks</li>
-    </ul>
 
-    <p><strong>BAPCO Gas – Network Infrastructure Trainee</strong></p>
-    <ul>
-      <li>Configured and troubleshot network devices</li>
-      <li>Assisted with infrastructure monitoring and support</li>
-    </ul>
+    <div class="role">
+      <h3>Information & eGovernment Authority (iGA) — Network Administration Trainee</h3>
+      <div class="meta">Bahrain • Trainee</div>
+      <ul>
+        <li>Supported administration tasks for network infrastructure in a government environment.</li>
+        <li>Assisted with network monitoring, troubleshooting, and operational security tasks.</li>
+        <li>Helped resolve connectivity issues by following escalation and documentation processes.</li>
+      </ul>
+    </div>
 
-    <p><strong>The Benefit Company – Network Support Trainee</strong></p>
-    <ul>
-      <li>Worked with Fortinet, SolarWinds, and Cloudflare</li>
-      <li>Managed Cisco routers and switches</li>
-    </ul>
+    <div class="role">
+      <h3>BAPCO Gas — Network Infrastructure Trainee</h3>
+      <div class="meta">Bahrain • Trainee</div>
+      <ul>
+        <li>Assisted in configuring and troubleshooting network devices within enterprise infrastructure.</li>
+        <li>Supported infrastructure monitoring and incident response workflows.</li>
+        <li>Collaborated with the team to maintain network availability and performance.</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <h3>The Benefit Company — Network Support Trainee</h3>
+      <div class="meta">Bahrain • Trainee</div>
+      <ul>
+        <li>Worked with <strong>Fortinet</strong>, <strong>SolarWinds</strong>, and <strong>Cloudflare</strong> as part of network support operations.</li>
+        <li>Assisted with managing and supporting <strong>Cisco routers and switches</strong>.</li>
+        <li>Supported monitoring, troubleshooting, and service uptime activities.</li>
+      </ul>
+    </div>
   </section>
 
   <section>
-    <h2>Skills</h2>
+    <h2>Projects (Optional – add if you have them)</h2>
     <ul>
-      <li>Networking & Troubleshooting</li>
-      <li>Cisco Devices</li>
-      <li>Linux</li>
-      <li>SD-WAN</li>
-      <li>Infoblox</li>
-      <li>SolarWinds</li>
-      <li>Fortinet</li>
-      <li>Power BI, Excel, SQL</li>
-      <li>Cybersecurity Fundamentals</li>
-      <li>Arabic & English (Fluent)</li>
+      <li><strong>Home Lab / Network Lab:</strong> VLANs, routing, firewall rules, monitoring (add details if applicable).</li>
+      <li><strong>Network Monitoring Dashboard:</strong> SolarWinds/Power BI reporting (add details if applicable).</li>
+      <li><strong>Automation Practice:</strong> Ansible playbooks for basic configuration tasks (add details if applicable).</li>
     </ul>
+    <p class="muted" style="margin-top:0.6rem;">
+      Tip: If you don’t have projects, we can remove this section to keep the CV tight.
+    </p>
   </section>
 
   <button class="download" onclick="window.print()">Download CV as PDF</button>
@@ -203,9 +322,8 @@
 </div>
 
 <footer>
-  © 2025 Ahmed Alsaadi. All Rights Reserved.
+  © 2026 Ahmed Alsaadi. All Rights Reserved.
 </footer>
 
 </body>
 </html>
-
